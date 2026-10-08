@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartMed - Detail Obat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="#" class="brand" aria-label="SmartMed">
+        <span class="brand-icon">✤</span>
+        <span>SmartMed</span>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#">Beranda</a>
+        <a href="#" class="active">Cari Obat</a>
+        <a href="#">Penyakit</a>
+        <a href="#">Cek Interaksi</a>
+      </nav>
+
+      <button class="login-btn" id="loginBtn">Masuk</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="#">Beranda</a>
+      <span>→</span>
+      <a href="#">Cari Obat</a>
+      <span>→</span>
+      <span>Detail Obat</span>
+    </div>
+
+    <section class="content-grid">
+      <article class="drug-content">
+        <h1>Darumas</h1>
+
+        <p class="meta"><strong>Aktif Ingredient:</strong> Slanamir, sabricysa</p>
+        <p class="meta"><strong>Category:</strong> Analgesic</p>
+        <p class="description">
+          short description obat aks aman, insting dengmmnggkankan asan
+          dengan dokter atar akat ap
+        </p>
+
+        <p class="usage-status">
+          <strong>Usage Status:</strong>
+          <span>Safe for Adult</span>
+        </p>
+
+        <section>
+          <h2>Kegunaan</h2>
+          <ul>
+            <li>Obat kegunaan</li>
+            <li>Gangguan penggunaan</li>
+            <li>Gangguan pencernaan</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Cara Penggunaan</h2>
+          <ol>
+            <li>Penuari obat saatam, cara penggunaan.</li>
+            <li>Cara penggunaan dicom un periiokasaan ketetian.</li>
+            <li>Penhari dengan anggitan inur nomam cara penggunaan hait.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Efek Samping</h2>
+          <div class="side-effects">
+            <ul>
+              <li>Efek samping</li>
+              <li>Efek samping</li>
+              <li>Gangguan jinamema</li>
+            </ul>
+            <div class="severity-list">
+              <div><span>Biomastiss</span><b>Sewaritas</b></div>
+              <div><span>Memonoreran</span><b>Sewaritas</b></div>
+              <div><span>Peoriodos</span><b>Sewaritas</b></div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>Peringatan &amp; Kontraindikasi</h2>
+          <ul class="warning-list">
+            <li><span class="warning-icon">!</span> Boldra-ane ngan fram dan gangguan pencernaan.</li>
+            <li><span class="warning-icon">▲</span> Peringatan &amp; kontraindikasi: peringatan &amp; kontraindikasi.</li>
+            <li><span class="warning-icon">▲</span> Peringatan &amp; kontraindikasi umum untuk, truntok mengintantinpan makanan umum.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Interaksi dengan Obat Lain</h2>
+          <div class="interaction-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Obat Name</th>
+                  <th>Detaral</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Darumas</strong></td>
+                  <td>Aktif Ingredient: Slanamir, sabricysa</td>
+                </tr>
+                <tr>
+                  <td>Obat lain</td>
+                  <td>Belum ada informasi interaksi.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </article>
+
+      <aside class="sidebar">
+        <div class="summary-card">
+          <h3>Summary:</h3>
+          <p><strong>Aktif Ingredient:</strong> Slanamir, sabricysa</p>
+          <p><strong>Usan aman:</strong> mcat, alsam, gangguan pencernaan</p>
+
+          <div class="interaction-box">
+            <h3><span>⚠</span> Cek Interaksi Obat</h3>
+            <p>Cek interaksi obat dari makan obat yang diminumkan apakah obat cek interaksi obat.</p>
+            <button class="primary-btn" id="interactionBtn">Cek Interaksi Obat Ini</button>
+          </div>
+        </div>
+
+        <button class="back-btn" id="backBtn">Kembali ke Hasil Pencarian</button>
+
+        <p class="disclaimer">
+          Hasil yang ditampilkan untuk informasi umum, bukan pengganti konsultasi
+          medis. Jangan membuat keputusan pengobatan tanpa berkonsultasi dengan
+          tenaga kesehatan.
+        </p>
+      </aside>
+    </section>
+  </main>
+
+  <div class="modal" id="interactionModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">×</button>
+      <div class="modal-icon">⚠</div>
+      <h2>Cek Interaksi Obat</h2>
+      <p>
+        Fitur pemeriksaan interaksi untuk <strong>Darumas</strong> siap digunakan.
+        Masukkan obat lain yang sedang digunakan untuk pemeriksaan lebih lanjut.
+      </p>
+      <label for="otherDrug">Nama obat lain</label>
+      <input id="otherDrug" type="text" placeholder="Contoh: Paracetamol" />
+      <button class="primary-btn full" id="checkBtn">Periksa Interaksi</button>
+      <p class="result" id="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
