@@ -392,6 +392,332 @@ tr:last-child td {
   font-weight: 700;
 }
 
+/* Beranda dan hero section */
+.home-page {
+  background: #f7f8f6;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.hero {
+  min-height: 470px;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 62px 24px 54px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr);
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-content {
+  max-width: 590px;
+}
+
+.hero-eyebrow {
+  margin: 0 0 10px;
+  color: #43754b;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  max-width: 560px;
+  margin: 0;
+  color: #181d19;
+  font-size: clamp(40px, 5vw, 62px);
+  line-height: 1.02;
+  letter-spacing: -2.5px;
+}
+
+.hero h1 span {
+  color: #567d5c;
+}
+
+.hero-description {
+  max-width: 530px;
+  margin: 20px 0 24px;
+  color: #606760;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.search-box {
+  display: grid;
+  grid-template-columns: 34px 1fr auto;
+  align-items: center;
+  max-width: 590px;
+  min-height: 58px;
+  padding: 7px;
+  border: 1px solid #ccd3c9;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 30px rgba(43, 77, 48, .09);
+}
+
+.search-icon {
+  text-align: center;
+  color: #718076;
+  font-size: 24px;
+}
+
+.search-box input {
+  min-width: 0;
+  height: 42px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #222;
+  font-size: 14px;
+}
+
+.search-box button {
+  height: 44px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: 8px;
+  background: #2f5d39;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.search-feedback {
+  min-height: 18px;
+  margin: 7px 0 0;
+  color: #3e6544;
+  font-size: 12px;
+}
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 13px;
+  color: #687069;
+  font-size: 11px;
+}
+
+.hero-trust span {
+  white-space: nowrap;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 360px;
+}
+
+.hero-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-one {
+  width: 330px;
+  height: 330px;
+  right: 10px;
+  top: 5px;
+  background: linear-gradient(145deg, #edf5e9, #dcebd7);
+}
+
+.circle-two {
+  width: 210px;
+  height: 210px;
+  right: 72px;
+  top: 65px;
+  border: 1px solid rgba(81, 119, 87, .16);
+}
+
+.medicine-card {
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 17px;
+  border: 1px solid #dde5da;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 14px 35px rgba(47, 91, 57, .14);
+}
+
+.medicine-card div:last-child {
+  display: grid;
+}
+
+.medicine-card strong {
+  font-size: 13px;
+}
+
+.medicine-card span {
+  color: #777;
+  font-size: 10px;
+}
+
+.main-card {
+  left: 12px;
+  top: 70px;
+}
+
+.medicine-icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #dfeadd;
+  color: #407048;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.safety-card {
+  right: -4px;
+  bottom: 45px;
+}
+
+.shield {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #2f5d39;
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 800;
+}
+
+.pill {
+  position: absolute;
+  z-index: 3;
+  width: 72px;
+  height: 28px;
+  border: 5px solid #fff;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(52, 91, 57, .16);
+}
+
+.pill-one {
+  right: 36px;
+  top: 28px;
+  background: linear-gradient(90deg, #9cc29e 50%, #f3f5f0 50%);
+  transform: rotate(-25deg);
+}
+
+.pill-two {
+  left: 45px;
+  bottom: 42px;
+  width: 58px;
+  height: 23px;
+  background: linear-gradient(90deg, #e3bfa3 50%, #f7f3e9 50%);
+  transform: rotate(18deg);
+}
+
+.feature-section {
+  background: #fff;
+  padding: 55px 24px 65px;
+}
+
+.section-heading,
+.feature-grid {
+  max-width: 1062px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading {
+  text-align: center;
+}
+
+.section-heading p {
+  margin: 0 0 7px;
+  color: #64816a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+  margin: 0 0 30px;
+  font-size: 28px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.feature-card {
+  min-height: 210px;
+  padding: 23px;
+  border: 1px solid #e1e5de;
+  border-radius: 12px;
+  background: #fbfcfa;
+  color: inherit;
+  text-decoration: none;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(51, 78, 55, .10);
+}
+
+.feature-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: #e7efe4;
+  color: #3e6745;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.feature-card h3 {
+  margin: 16px 0 7px;
+  font-size: 17px;
+}
+
+.feature-card p {
+  min-height: 54px;
+  margin: 0 0 12px;
+  color: #686e68;
+  line-height: 1.55;
+}
+
+.feature-link {
+  color: #416b49;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.home-footer {
+  padding: 18px 24px;
+  background: #263328;
+  color: #dce5dd;
+  text-align: center;
+  font-size: 11px;
+}
+
+.home-footer p {
+  margin: 0;
+}
+
 @media (max-width: 760px) {
   .site-header {
     height: auto;
@@ -438,5 +764,102 @@ tr:last-child td {
 
   .severity-list {
     margin-top: 7px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 45px 18px 35px;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-visual {
+    min-height: 320px;
+  }
+
+  .circle-one {
+    width: 280px;
+    height: 280px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .circle-two {
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .main-card {
+    left: 0;
+  }
+
+  .safety-card {
+    right: 0;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-menu {
+    gap: 16px;
+  }
+
+  .nav-menu a {
+    white-space: nowrap;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    letter-spacing: -1.5px;
+  }
+
+  .search-box {
+    grid-template-columns: 30px 1fr;
+  }
+
+  .search-box button {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+  }
+
+  .hero-trust {
+    display: grid;
+  }
+
+  .hero-visual {
+    min-height: 290px;
+  }
+
+  .medicine-card {
+    padding: 10px;
+  }
+
+  .main-card {
+    top: 35px;
+  }
+
+  .safety-card {
+    bottom: 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
   }
 }
