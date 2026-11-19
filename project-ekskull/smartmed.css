@@ -1,0 +1,150 @@
+/* Add-on styles for SmartMed demo features; original styles remain in style.css. */
+.smartmed-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: rgba(18, 30, 21, .58);
+}
+
+.smartmed-dialog {
+  position: relative;
+  width: min(620px, 100%);
+  max-height: min(85vh, 760px);
+  overflow: auto;
+  padding: 28px;
+  border: 1px solid #e1e8df;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .24);
+}
+
+.smartmed-dialog h2 {
+  margin: 0 36px 8px 0;
+  color: #233428;
+  font-size: 25px;
+}
+
+.smartmed-dialog p {
+  color: #59645b;
+  line-height: 1.6;
+}
+
+.smartmed-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  background: #eef3ed;
+  color: #344a37;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.smartmed-form {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.smartmed-form label {
+  display: grid;
+  gap: 6px;
+  color: #354238;
+  font-weight: 700;
+}
+
+.smartmed-form input,
+.smartmed-form select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #ccd5ca;
+  border-radius: 8px;
+  background: #fff;
+  font: inherit;
+}
+
+.smartmed-form input:focus,
+.smartmed-form select:focus {
+  outline: 3px solid rgba(67, 117, 75, .16);
+  border-color: #527b58;
+}
+
+.smartmed-submit,
+.smartmed-action {
+  min-height: 44px;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 8px;
+  background: #2f5d39;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.smartmed-message {
+  min-height: 20px;
+  margin: 4px 0 0 !important;
+  color: #315f39 !important;
+  font-weight: 700;
+}
+
+.smartmed-warning {
+  margin-top: 18px;
+  padding: 12px 14px;
+  border-left: 3px solid #d5a242;
+  border-radius: 5px;
+  background: #fff8e9;
+  color: #64552f;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.smartmed-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.smartmed-item {
+  padding: 15px;
+  border: 1px solid #e0e7de;
+  border-radius: 10px;
+  background: #fbfcfa;
+}
+
+.smartmed-item h3 {
+  margin: 0 0 5px;
+  color: #2f5136;
+  font-size: 16px;
+}
+
+.smartmed-item p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.smartmed-empty {
+  padding: 18px;
+  border-radius: 10px;
+  background: #f5f7f4;
+}
+
+.smartmed-account {
+  color: #315f39;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  .smartmed-dialog {
+    padding: 22px 18px;
+  }
+}
