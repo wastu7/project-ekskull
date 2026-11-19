@@ -18,9 +18,9 @@
 
       <nav class="nav-menu" aria-label="Navigasi utama">
         <a href="baru.html" class="active">Beranda</a>
-        <a href="index.html">Cari Obat</a>
+        <a href="cariobat.html">Cari Obat</a>
         <a href="#fitur">Penyakit</a>
-        <a href="index.html#interaksi">Cek Interaksi</a>
+        <a href="cariobat.html#interaksi">Cek Interaksi</a>
       </nav>
 
       <button class="login-btn" type="button">Masuk</button>
@@ -40,12 +40,7 @@
         <form class="search-box" id="searchForm" role="search">
           <label class="sr-only" for="searchInput">Cari obat, penyakit, atau gejala</label>
           <span class="search-icon" aria-hidden="true">⌕</span>
-          <input
-            id="searchInput"
-            type="search"
-            placeholder="Cari obat, penyakit, atau gejala"
-            autocomplete="off"
-          >
+          <input id="searchInput" type="search" placeholder="Cari obat, penyakit, atau gejala" autocomplete="off">
           <button type="submit">Cari</button>
         </form>
         <p class="search-feedback" id="searchFeedback" role="status"></p>
@@ -62,17 +57,11 @@
         <div class="hero-circle circle-two"></div>
         <div class="medicine-card main-card">
           <div class="medicine-icon">+</div>
-          <div>
-            <strong>Informasi Obat</strong>
-            <span>Lengkap &amp; terstruktur</span>
-          </div>
+          <div><strong>Informasi Obat</strong><span>Lengkap &amp; terstruktur</span></div>
         </div>
         <div class="medicine-card safety-card">
           <span class="shield">✓</span>
-          <div>
-            <strong>Pemeriksaan Aman</strong>
-            <span>Periksa interaksi obat</span>
-          </div>
+          <div><strong>Pemeriksaan Aman</strong><span>Periksa interaksi obat</span></div>
         </div>
         <div class="pill pill-one"></div>
         <div class="pill pill-two"></div>
@@ -84,23 +73,20 @@
         <p>LAYANAN SMARTMED</p>
         <h2 id="feature-title">Informasi kesehatan dalam satu tempat</h2>
       </div>
-
       <div class="feature-grid">
-        <a class="feature-card" href="index.html">
+        <a class="feature-card" href="cariobat.html">
           <span class="feature-icon">⌕</span>
           <h3>Cari Obat</h3>
           <p>Temukan kegunaan, dosis umum, efek samping, dan peringatan suatu obat.</p>
           <span class="feature-link">Lihat detail obat →</span>
         </a>
-
         <a class="feature-card" href="#">
           <span class="feature-icon">+</span>
           <h3>Info Penyakit</h3>
           <p>Pelajari gejala dan pilihan penanganan dasar untuk berbagai kondisi.</p>
           <span class="feature-link">Cari penyakit →</span>
         </a>
-
-        <a class="feature-card" href="index.html#interaksi">
+        <a class="feature-card" href="cariobat.html#interaksi">
           <span class="feature-icon">⚠</span>
           <h3>Cek Interaksi</h3>
           <p>Periksa potensi interaksi antara obat yang Anda gunakan.</p>
@@ -122,15 +108,13 @@
     searchForm.addEventListener("submit", (event) => {
       event.preventDefault();
       const keyword = searchInput.value.trim();
-
       if (!keyword) {
         searchFeedback.textContent = "Masukkan nama obat, penyakit, atau gejala.";
         searchInput.focus();
         return;
       }
-
       searchFeedback.textContent = `Mencari "${keyword}"...`;
-      window.location.href = "index.html";
+      window.location.href = `cariobat.html?q=${encodeURIComponent(keyword)}`;
     });
 
     document.querySelector(".login-btn").addEventListener("click", () => {
